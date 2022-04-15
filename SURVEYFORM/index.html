@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="background">
+        <div class="titulo">
+            <h1 class="survey">freeCodeCamp Survey Form</h1>
+            <h3 class="sub-survey">Thank you for taking the time to help us improve the platform</h3>
+        </div>
+        <main class="shape">
+            <form class="form" action="http://www.google.com.br">
+                <div class="grupo">
+                    <label for="Nome" class="geral">Nome:</label>
+                    <input type="text" name="Nome" placeholder="Escreva seu nome" class="form-01" required>
+                </div>
+                <div class="grupo">
+                    <label for="Email" class="geral">Email:</label>
+                    <input type="text" name="Email" placeholder="Escreva seu email" class="form-01" required>
+                </div>
+                <div class="grupo">
+                    <label for="Idade" class="geral">Idade:</label>
+                    <input type="text" name="Idade" placeholder="Escreva sua idade" class="form-01" required>
+                </div>
+                <div class="escolha">
+                    <label for="ocupacao">Escolha uma ocupação:</label>
+                    <select name="ocupacao" class="form-01">
+                        <option disabled selected value>Escolha uma opção</option>
+                        <option value="estudande">Estudande</option>
+                        <option value="trabalhando">Trabalhando</option>
+                        <option value="pai-solteiro">Pai solteiro</option>
+                        <option value="mae-solteira">Mãe solteira</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <label for="recomendacao" class="geral">Você recomendaria o freeCodeCamp para alguém?</label>
+                    <div class="display-1">
+                        <input type="radio" name="recomendacao" value="comcerteza" class="form-check-1" required>
+                            <p class="textos-radio">Com certeza</p>
+                    </div>
+                    <div class="display-1">
+                        <input type="radio" name="recomendacao" value="talvez" class="form-check-1" required>
+                            <p class="textos-radio">Talvez</p>
+                    </div>
+                    <div class="display-1">
+                        <input type="radio" name="recomendacao" value="nao" class="form-check-1" required>
+                            <p class="textos-radio">Não</p>
+                    </div>
+                    <div class="caracteristica">
+                        <label for="caracteristica" class="geral-1">Qual característica você mais gosta no CodeCamp?</label>
+                        <select name="caracteristica" class="form-01">
+                            <option disabled selected value>Selecione uma opção</option>
+                            <option value="desafios">Desafios</option>
+                            <option value="conteudo">Conteúdo</option>
+                            <option value="comunidade">Comunidade</option>
+                            <option value="projetos">Projetos</option>
+                        </select>
+                    </div>
+                    <div class="implemen">
+                        <label for="implementacao" id="implementacao">O que você gostaria de implementar no CodeCamp?
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                                <p>Front End Projects</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                                <p>Back End Projects</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                                <p>Data Visualization</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Challeges</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Open Source Comunity</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Gitter Helps Rooms</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Videos</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Wiki</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Forum</p>
+                        </div>
+                        <div class="alinhamento">
+                            <input type="checkbox" name="implementacao" class="check-imple">
+                            <p>Additional Courses</p>
+                        </div>
+                    </div>
+                    <div class="posicionamento">
+                        <p>Escreva uma sugestão</p>
+                        <textarea name="areadetexto" id="areadetexto" class="areadetexto" cols="30" rows="5" placeholder="Escreva alguma sugestão"></textarea>
+                    </div>
+                    <div class="form">
+                        <button type="submit" id="botao-enviar" href="">ENVIAR</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </header>
+</body>
+</html>
